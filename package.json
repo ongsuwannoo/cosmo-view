@@ -1,0 +1,28 @@
+{
+  "name": "cosmo-view",
+  "version": "1.0.0",
+  "description": "Modern frontend monorepo with React, TypeScript, and Component-Driven Development",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "lint": "biome lint .",
+    "format": "biome format . --write",
+    "check": "biome check .",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "typecheck": "pnpm -r typecheck",
+    "storybook": "pnpm --filter @cosmo-view/ui storybook",
+    "build-storybook": "pnpm --filter @cosmo-view/ui build-storybook"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

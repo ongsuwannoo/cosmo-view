@@ -1,0 +1,19 @@
+{
+  "extends": "@cosmo-view/typescript-config/react.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/components/base/*": ["./src/components/base/*"],
+      "@/components/composed/*": ["./src/components/composed/*"],
+      "@/components/features/*": ["./src/components/features/*"],
+      "@/components/pages/*": ["./src/components/pages/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/styles/*": ["./src/styles/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "node_modules", "storybook-static", ".storybook"]
+}

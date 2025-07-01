@@ -1,0 +1,8 @@
+{
+  "name": "@cosmo-view/typescript-config",
+  "version": "1.0.0",
+  "description": "Shared TypeScript configuration for cosmo-view monorepo",
+  "private": true,
+  "main": "index.js",
+  "files": ["base.json", "react.json", "nextjs.json"]
+}
