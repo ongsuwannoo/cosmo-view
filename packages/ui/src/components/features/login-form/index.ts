@@ -1,1 +1,1 @@
-export { LoginForm } from './login-form';
+export { LoginForm, type LoginFormData, type LoginFormProps } from './login-form';

@@ -1,8 +1,15 @@
-import { Button, Card, CardContent, CardDescription, CardHeader, CardTitle } from '@cosmo-view/ui';
-import { FormInput } from '../ui/FormInput';
-import { FormSelect } from '../ui/FormSelect';
-import { FormTextarea } from '../ui/FormTextarea';
-import { FormCheckbox } from '../ui/FormCheckbox';
+import {
+  Button,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+  FormInput,
+  FormSelect,
+  FormTextarea,
+  FormCheckbox,
+} from '@cosmo-view/ui';
 import { useZodForm } from '@/lib/hooks/useZodForm';
 import { contactSchema, type ContactFormData } from '@/lib/validations/forms';
 

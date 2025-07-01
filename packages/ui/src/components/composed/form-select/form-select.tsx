@@ -1,10 +1,13 @@
 import type { ComponentProps, ReactNode } from 'react';
-import type { FieldError } from 'react-hook-form';
 import { forwardRef } from 'react';
+
+interface FormFieldError {
+  message?: string;
+}
 
 interface FormSelectProps extends ComponentProps<'select'> {
   label?: string;
-  error?: FieldError | undefined;
+  error?: FormFieldError | undefined;
   helperText?: string;
   children: ReactNode;
 }

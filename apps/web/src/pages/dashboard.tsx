@@ -1,5 +1,15 @@
 import { useAuthStore } from '@/stores/auth';
-import { Button, Card, CardContent, CardDescription, CardHeader, CardTitle, DashboardShell, StatCard } from '@cosmo-view/ui';
+import {
+  Button,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+  DashboardShell,
+  StatCard,
+  Grid,
+} from '@cosmo-view/ui';
 import { ProjectExample } from '@/components/ProjectExample';
 import { Link } from '@tanstack/react-router';
 
@@ -19,27 +29,23 @@ export function Dashboard() {
       </div>
 
       {/* Dashboard Stats */}
-      <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8'>
+      <Grid cols={{ default: 1, md: 2, lg: 3 }} className="mb-8">
         <StatCard
-          title="Total Projects"
-          value="12"
-          description="Active projects"
-          trend={{ value: 20, label: "from last month", isPositive: true }}
+          title='Total Projects'
+          value='12'
+          description='Active projects'
+          trend={{ value: 20, label: 'from last month', isPositive: true }}
         />
         <StatCard
-          title="Completed Tasks"
-          value="89"
-          description="This month"
-          trend={{ value: 12, label: "from last month", isPositive: true }}
+          title='Completed Tasks'
+          value='89'
+          description='This month'
+          trend={{ value: 12, label: 'from last month', isPositive: true }}
         />
-        <StatCard
-          title="Team Members"
-          value="8"
-          description="Active members"
-        />
-      </div>
+        <StatCard title='Team Members' value='8' description='Active members' />
+      </Grid>
 
-      <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
+      <Grid cols={{ default: 1, md: 2, lg: 3 }}>
         <Card>
           <CardHeader>
             <CardTitle>Form Validation Demo</CardTitle>
@@ -60,9 +66,7 @@ export function Dashboard() {
         <Card>
           <CardHeader>
             <CardTitle>Component Library</CardTitle>
-            <CardDescription>
-              Browse our Component-Driven Development architecture
-            </CardDescription>
+            <CardDescription>Browse our Component-Driven Development architecture</CardDescription>
           </CardHeader>
           <CardContent>
             <p className='text-sm text-muted-foreground'>
@@ -94,7 +98,7 @@ export function Dashboard() {
             </p>
           </CardContent>
         </Card>
-      </div>
+      </Grid>
     </DashboardShell>
   );
 }

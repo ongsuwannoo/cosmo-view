@@ -1,10 +1,13 @@
 import type { ComponentProps } from 'react';
-import type { FieldError } from 'react-hook-form';
 import { forwardRef } from 'react';
+
+interface FormFieldError {
+  message?: string;
+}
 
 interface FormCheckboxProps extends ComponentProps<'input'> {
   label?: string;
-  error?: FieldError | undefined;
+  error?: FormFieldError | undefined;
   helperText?: string;
 }
 

@@ -1,5 +1,12 @@
-import { Button, Card, CardContent, CardDescription, CardHeader, CardTitle } from '@cosmo-view/ui';
-import { FormInput } from '../ui/FormInput';
+import {
+  Button,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+  FormInput,
+} from '@cosmo-view/ui';
 import { useZodForm } from '@/lib/hooks/useZodForm';
 import { registerSchema, type RegisterFormData } from '@/lib/validations/auth';
 

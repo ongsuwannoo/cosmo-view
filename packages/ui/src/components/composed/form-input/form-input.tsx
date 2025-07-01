@@ -1,10 +1,13 @@
-import { Input } from '@cosmo-view/ui';
+import { Input } from '@/components/base/input';
 import { type ComponentProps, forwardRef } from 'react';
-import type { FieldError } from 'react-hook-form';
+
+interface FormFieldError {
+  message?: string;
+}
 
 interface FormInputProps extends ComponentProps<typeof Input> {
   label?: string;
-  error?: FieldError | undefined;
+  error?: FormFieldError | undefined;
   helperText?: string;
 }
 

@@ -18,13 +18,13 @@ interface FormFieldProps {
 
 function FormField({ label, children, error, required }: FormFieldProps) {
   return (
-    <div className="space-y-2">
-      <label className="text-sm font-medium">
+    <div className='space-y-2'>
+      <label className='text-sm font-medium'>
         {label}
-        {required && <span className="text-red-500 ml-1">*</span>}
+        {required && <span className='text-red-500 ml-1'>*</span>}
       </label>
       {children}
-      {error && <p className="text-sm text-red-500">{error}</p>}
+      {error && <p className='text-sm text-red-500'>{error}</p>}
     </div>
   );
 }
@@ -64,7 +64,7 @@ export function GenericForm({
         {description && <CardDescription>{description}</CardDescription>}
       </CardHeader>
       <CardContent>
-        <form onSubmit={onSubmit} className="space-y-4">
+        <form onSubmit={onSubmit} className='space-y-4'>
           {fields.map((field) => (
             <FormField
               key={field.name}
@@ -81,7 +81,7 @@ export function GenericForm({
               />
             </FormField>
           ))}
-          <Button type="submit" className="w-full" disabled={isLoading}>
+          <Button type='submit' className='w-full' disabled={isLoading}>
             {isLoading ? 'Loading...' : submitLabel}
           </Button>
         </form>

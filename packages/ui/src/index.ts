@@ -4,6 +4,11 @@ export * from '@/components/base/input';
 
 // Composed components
 export * from '@/components/composed/card';
+export * from '@/components/composed/grid';
+export * from '@/components/composed/form-input';
+export * from '@/components/composed/form-select';
+export * from '@/components/composed/form-textarea';
+export * from '@/components/composed/form-checkbox';
 
 // Feature components
 export * from '@/components/features/login-form';
