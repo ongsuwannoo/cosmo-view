@@ -1,5 +1,6 @@
 import { Dashboard } from '@/pages/dashboard';
 import { FormDemoPage } from '@/pages/form-demo';
+import { DataTablePage } from '@/pages/data-table';
 import { useAuthStore } from '@/stores/auth';
 import { AuthPage } from '@cosmo-view/ui';
 import { createRootRoute, createRoute, createRouter, Outlet } from '@tanstack/react-router';
@@ -34,6 +35,12 @@ const formDemoRoute = createRoute({
   component: FormDemoPage,
 });
 
-const routeTree = rootRoute.addChildren([indexRoute, formDemoRoute]);
+const dataTableRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/table',
+  component: DataTablePage,
+});
+
+const routeTree = rootRoute.addChildren([indexRoute, formDemoRoute, dataTableRoute]);
 
 export const router = createRouter({ routeTree });

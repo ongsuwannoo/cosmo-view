@@ -9,6 +9,7 @@ export * from '@/components/composed/form-input';
 export * from '@/components/composed/form-select';
 export * from '@/components/composed/form-textarea';
 export * from '@/components/composed/form-checkbox';
+export * from '@/components/composed/data-table';
 
 // Feature components
 export * from '@/components/features/login-form';

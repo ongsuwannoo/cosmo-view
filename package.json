@@ -5,9 +5,13 @@
   "private": true,
   "type": "module",
   "packageManager": "pnpm@9.0.0",
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "pnpm -r build",
+    "build:check": "pnpm --filter @cosmo-view/ui build && pnpm --filter @cosmo-view/web build:check",
     "dev": "pnpm -r --parallel dev",
     "lint": "biome lint .",
     "format": "biome format . --write",

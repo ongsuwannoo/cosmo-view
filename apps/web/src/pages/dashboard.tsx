@@ -29,7 +29,7 @@ export function Dashboard() {
       </div>
 
       {/* Dashboard Stats */}
-      <Grid cols={{ default: 1, md: 2, lg: 3 }} className="mb-8">
+      <Grid cols={{ default: 1, md: 2, lg: 3 }} className='mb-8'>
         <StatCard
           title='Total Projects'
           value='12'
@@ -58,6 +58,26 @@ export function Dashboard() {
             <Link to='/forms'>
               <Button size='sm' className='w-full'>
                 View Forms Demo
+              </Button>
+            </Link>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Data Table Demo</CardTitle>
+            <CardDescription>
+              Advanced table with sorting, filtering & column controls
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className='text-sm text-muted-foreground mb-4'>
+              TanStack Table integration with smart features like sorting, filtering, column
+              visibility, and pagination.
+            </p>
+            <Link to='/table'>
+              <Button size='sm' className='w-full'>
+                View Data Table
               </Button>
             </Link>
           </CardContent>
