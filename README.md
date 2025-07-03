@@ -83,7 +83,7 @@ Each component level has its own Storybook stories for isolated development and 
 
 ## Technology Stack
 
--   **Framework**: React 18 with TypeScript
+-   **Framework**: React 19 with TypeScript
 -   **Build Tool**: Vite
 -   **Styling**: Tailwind CSS with CSS Variables
 -   **UI Components**: shadcn/ui primitives
