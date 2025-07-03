@@ -1,0 +1,152 @@
+/**
+ * User Management Styles
+ * Domain-specific styles for user management components
+ */
+
+.user-management-container {
+  @apply min-h-screen bg-gray-50 p-6;
+}
+
+.user-management-header {
+  @apply mb-8 flex items-center justify-between;
+}
+
+.user-management-title {
+  @apply text-3xl font-bold text-gray-900;
+}
+
+.user-management-actions {
+  @apply flex items-center gap-3;
+}
+
+.user-card {
+  @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200;
+}
+
+.user-card-header {
+  @apply flex items-center gap-4 mb-4;
+}
+
+.user-avatar {
+  @apply w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-semibold;
+}
+
+.user-info {
+  @apply flex-1;
+}
+
+.user-name {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+.user-email {
+  @apply text-sm text-gray-600;
+}
+
+.user-role {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.user-role-admin {
+  @apply bg-red-100 text-red-800;
+}
+
+.user-role-moderator {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.user-role-user {
+  @apply bg-green-100 text-green-800;
+}
+
+.user-status {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.user-status-active {
+  @apply bg-green-100 text-green-800;
+}
+
+.user-status-inactive {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.user-status-pending {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.user-status-suspended {
+  @apply bg-red-100 text-red-800;
+}
+
+.user-filters {
+  @apply bg-white rounded-lg shadow-md p-4 mb-6;
+}
+
+.user-filters-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4;
+}
+
+.user-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.user-actions {
+  @apply flex items-center gap-2;
+}
+
+.user-action-button {
+  @apply inline-flex items-center px-3 py-1.5 text-sm font-medium rounded-md transition-colors duration-200;
+}
+
+.user-action-button-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.user-action-button-secondary {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+}
+
+.user-action-button-danger {
+  @apply bg-red-600 text-white hover:bg-red-700 focus:ring-2 focus:ring-red-500 focus:ring-offset-2;
+}
+
+.user-empty-state {
+  @apply text-center py-12;
+}
+
+.user-empty-state-icon {
+  @apply mx-auto h-16 w-16 text-gray-400 mb-4;
+}
+
+.user-empty-state-title {
+  @apply text-lg font-semibold text-gray-900 mb-2;
+}
+
+.user-empty-state-description {
+  @apply text-sm text-gray-600 mb-6;
+}
+
+.user-loading {
+  @apply flex items-center justify-center py-12;
+}
+
+.user-loading-spinner {
+  @apply w-8 h-8 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin;
+}
+
+.user-error {
+  @apply bg-red-50 border border-red-200 rounded-md p-4 mb-6;
+}
+
+.user-error-content {
+  @apply flex items-center;
+}
+
+.user-error-icon {
+  @apply w-5 h-5 text-red-400 mr-3;
+}
+
+.user-error-message {
+  @apply text-sm text-red-700;
+}

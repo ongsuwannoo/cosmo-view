@@ -22,6 +22,7 @@
     "@tanstack/react-router": "^1.81.10",
     "@tanstack/react-table": "^8.21.3",
     "@tanstack/router-devtools": "^1.81.10",
+    "immer": "^10.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.59.0",

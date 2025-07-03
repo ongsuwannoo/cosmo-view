@@ -85,6 +85,24 @@ export function Dashboard() {
 
         <Card>
           <CardHeader>
+            <CardTitle>User Management</CardTitle>
+            <CardDescription>Role-based access control and user administration</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className='text-sm text-muted-foreground mb-4'>
+              Google Cloud IAM-inspired RBAC system with multi-role support, resource-scoped
+              permissions, and comprehensive user management.
+            </p>
+            <Link to='/user-management'>
+              <Button size='sm' className='w-full'>
+                Manage Users
+              </Button>
+            </Link>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
             <CardTitle>Component Library</CardTitle>
             <CardDescription>Browse our Component-Driven Development architecture</CardDescription>
           </CardHeader>

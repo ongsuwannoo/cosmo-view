@@ -1,6 +1,7 @@
 import { Dashboard } from '@/pages/dashboard';
 import { FormDemoPage } from '@/pages/form-demo';
 import { DataTablePage } from '@/pages/data-table';
+import { UserManagementDemo } from '@/pages/user-management-demo';
 import { useAuthStore } from '@/stores/auth';
 import { AuthPage } from '@cosmo-view/ui';
 import { createRootRoute, createRoute, createRouter, Outlet } from '@tanstack/react-router';
@@ -41,6 +42,17 @@ const dataTableRoute = createRoute({
   component: DataTablePage,
 });
 
-const routeTree = rootRoute.addChildren([indexRoute, formDemoRoute, dataTableRoute]);
+const userManagementRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/user-management',
+  component: UserManagementDemo,
+});
+
+const routeTree = rootRoute.addChildren([
+  indexRoute,
+  formDemoRoute,
+  dataTableRoute,
+  userManagementRoute,
+]);
 
 export const router = createRouter({ routeTree });
